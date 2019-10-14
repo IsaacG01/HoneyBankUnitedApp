@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Account>
+@{
+    ViewData["Title"] = "UserPage";
+}
+
+<h1>UserPage</h1>
+@foreach(var p in Model)
+{
+<div>
+    @p.LastName ... @p.AccountId ... @p.CheckingBalance
+</div>
+}
+<div id="mainContent">
+    <div class="d-flex d-flex-inline">
+        <div class="col-3">
+            <h1>Name</h1>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+
+
+    </div>
+    <h1>Accounts</h1>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    Checking
+                </div>
+<!---->
+            </div>
+        </div>
+
+
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    Savings
+                </div>
+<!---->
+            </div>
+        </div>
+    </div>
+</div>
+
